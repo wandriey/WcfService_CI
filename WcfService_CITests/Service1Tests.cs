@@ -12,13 +12,23 @@ namespace WcfService_CI.Tests
     public class Service1Tests
     {
         [TestMethod()]
-        public void BeregnSumTest()
+        public void BeregnSumTest7()
         {
             Service1 service = new Service1();
 
             int udregning = service.BeregnSum(2, 5);
 
             Assert.AreEqual(udregning, 7);
+        }
+
+        [TestMethod()]
+        public void BeregnSumTest8()
+        {
+            Service1 service = new Service1();
+
+            int udregning = service.BeregnSum(3, 5);
+
+            Assert.AreEqual(udregning, 8);
         }
     }
 }
